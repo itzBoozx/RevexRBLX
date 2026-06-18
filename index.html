@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REVEX</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Orbitron',sans-serif;
+    background:#090909;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:
+    radial-gradient(circle at center,#00ffff22 0%,transparent 40%),
+    linear-gradient(135deg,#0a0a0a,#111,#0a0a0a);
+}
+
+.hero h1{
+    font-size:7rem;
+    color:#ffe600;
+    text-shadow:
+    0 0 10px #ffe600,
+    0 0 20px #ffe600,
+    0 0 40px #ffe600;
+    animation:glitch 3s infinite;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#00ffff;
+    font-size:1.2rem;
+}
+
+@keyframes glitch{
+    0%,100%{transform:translateX(0);}
+    20%{transform:translateX(-2px);}
+    40%{transform:translateX(2px);}
+    60%{transform:translateX(-1px);}
+    80%{transform:translateX(1px);}
+}
+
+.links{
+    margin-top:40px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.links a{
+    text-decoration:none;
+    color:white;
+    border:2px solid #00ffff;
+    padding:14px 28px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.links a:hover{
+    background:#00ffff;
+    color:black;
+    box-shadow:0 0 20px #00ffff;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    color:#ffe600;
+    margin-bottom:25px;
+    font-size:2.2rem;
+}
+
+.about p,
+.faq p{
+    color:#cccccc;
+    line-height:1.8;
+}
+
+/* Cards */
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    flex:1 1 250px;
+    background:#111;
+    border:1px solid #00ffff55;
+    border-radius:15px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #00ffff55;
+}
+
+.card h3{
+    color:#00ffff;
+    margin-bottom:15px;
+}
+
+/* FAQ */
+
+.faq-item{
+    background:#111;
+    border-left:4px solid #ffe600;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+
+.faq-item h3{
+    color:#00ffff;
+    margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #222;
+    color:#888;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:4rem;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+    <h1>REVEX</h1>
+    <p>Roblox Tower Defense • Simulators • Livestreams</p>
+
+```
+<div class="links">
+    <a href="https://www.youtube.com/@RevexRBLXX" target="_blank">YouTube</a>
+    <a href="https://discord.gg/f2caP6Jj" target="_blank">Discord</a>
+    <a href="https://www.roblox.com/users/3747469962/profile?friendshipSourceType=PlayerSearch" target="_blank">Roblox Profile</a>
+</div>
+```
+
+</section>
+
+<section class="about">
+    <h2>About Revex</h2>
+
+```
+<p>
+    Revex is a Roblox content creator known for making videos about
+    tower defense games and other Roblox experiences. He promotes
+    Roblox games and showcases gameplay through videos and livestreams,
+    giving viewers a look at what games are like before they play them.
+    His content focuses on tower defense games, community interaction,
+    game updates, and helping players discover new Roblox experiences.
+</p>
+```
+
+</section>
+
+<section>
+    <h2>What Revex Does</h2>
+
+```
+<div class="cards">
+
+    <div class="card">
+        <h3>Tower Defense Content</h3>
+        <p>
+            Covers Roblox tower defense games, updates,
+            gameplay, and upcoming experiences.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Livestreams</h3>
+        <p>
+            Streams Roblox games live and interacts
+            with viewers and community members.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Game Promotion</h3>
+        <p>
+            Highlights new and upcoming Roblox games,
+            helping players discover new experiences.
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section class="faq">
+    <h2>FAQ</h2>
+
+```
+<div class="faq-item">
+    <h3>What type of games does Revex play?</h3>
+    <p>
+        Revex mainly plays Roblox tower defense games,
+        but he also covers other Roblox experiences.
+    </p>
+</div>
+
+<div class="faq-item">
+    <h3>Does Revex livestream?</h3>
+    <p>
+        Yes. Revex livestreams on YouTube and Twitch,
+        where he showcases Roblox games and interacts
+        with his community.
+    </p>
+</div>
+
+<div class="faq-item">
+    <h3>What kind of content does Revex make?</h3>
+    <p>
+        Revex creates videos featuring Roblox tower
+        defense games, game updates, gameplay showcases,
+        and previews of upcoming Roblox experiences.
+    </p>
+</div>
+
+<div class="faq-item">
+    <h3>Where can I follow Revex?</h3>
+    <p>
+        You can follow Revex on YouTube, join the Discord
+        server, and visit his Roblox profile using the links above.
+    </p>
+</div>
+```
+
+</section>
+
+<footer>
+    © 2026 REVEX Fan Website
+</footer>
+
+</body>
+</html>
